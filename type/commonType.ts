@@ -6,11 +6,11 @@ export type directorType = {
 }
 
 export type studentType = {
-    name: string,
-    gender: string,
-    physics: number,
-    maths: number,
-    english: number
+    Name: string,
+    Gender: string,
+    Physics: number,
+    Math: number,
+    English: number
 }
 
 export type contactTypes = {

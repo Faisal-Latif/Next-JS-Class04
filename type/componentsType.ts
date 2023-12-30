@@ -1,6 +1,7 @@
 export type buttonProps={
     title:string,
     data?:string,
+    onClickhandler?:() => void
 }
 
 export type cardprops={

@@ -7,6 +7,7 @@ export default function Home() {
 
     <div>
       <main>
+        
         <h1 style={{ fontSize: "large", textAlign: "center", background: "blue", color: "white" }}>
           Home Page
         </h1>

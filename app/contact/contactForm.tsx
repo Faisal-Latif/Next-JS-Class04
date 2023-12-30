@@ -35,7 +35,17 @@ export default function ContactForm() {
   // const [email, setEmail] = useState<string>("")
   // const [text, setText] = useState<string>("")
   // const [loading, setLoading] = useState<boolean>(false)
+  const onClickhandler = () => {
+    alert("button clicked")
+  }
+  const [userName, setuserName] = useState("")
+  const getUserNamehandler = (event:any) => {
+    console.log("getUserNamehandler", event.target.value);
+    setuserName(event.target.value)  
+  }
 
+  
+  
   return (
     <>
       <form className="max-w-md mx-auto">
@@ -46,6 +56,7 @@ export default function ContactForm() {
           </label>
           <input
             onChange={onChangeHandler}
+            
             type="text"
             id="name"
             name="name"
@@ -87,16 +98,18 @@ export default function ContactForm() {
             Message
           </label>
           <textarea
+            onChange={onChangeHandler}
             id="message"
             name="message"
             rows={4}
             className="w-full px-3 py-2 border rounded-md"
             required
-          ></textarea>
+          />
         </div>
 
         <div className="mb-6">
           <button
+          onClick={onClickhandler}
             type="submit"
             className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
           >
