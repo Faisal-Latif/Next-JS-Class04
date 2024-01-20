@@ -1,5 +1,8 @@
+
 import { directorType } from "@/type/componentsType";
+import Link from "next/link";
 export default function about() {
+
     const listOfdirectors: directorType[] = [{
         name: "Faisal",
         title: "CEO",
@@ -23,6 +26,9 @@ export default function about() {
     ]
     return (
         <div>
+            <Link href={"/"}>index</Link>
+            <br/>
+            <Link href={"/contact"}>contact</Link>
             <h1>List of Directors</h1>
 
             {listOfdirectors.map((item, index) => {

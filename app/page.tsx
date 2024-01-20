@@ -2,6 +2,7 @@ import Button from "./components/button/button"
 import Card from "@/app/components/card/card"
 import Tag from "./tag/tag"
 import { useStyleRegistry } from "styled-jsx"
+import Link from "next/link"
 export default function Home() {
   return (
 
@@ -17,6 +18,10 @@ export default function Home() {
       <Button title="1-Apply" data="2-Source" />
       <br />
       <span>10-12-23</span>
+      <br/>
+      <Link href={"/about"}>about</Link>
+      <br/>
+      <Link href={"/contact"}>contact</Link>
     </div>
   )
 }
